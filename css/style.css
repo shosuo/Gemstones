@@ -1,5 +1,8 @@
 body{
     color: black;
+    width:  100%;
+    height: auto;
+    margin: auto;
 }
 a{
     text-decoration: none;
@@ -21,9 +24,12 @@ a:hover{
 }
 nav{
     align-items: center;
+    width: 100%;
+    
 }
 main,header{
     margin-top: 10%;
+    height: auto;
 }
 .row{
     display: grid;
@@ -42,8 +48,42 @@ main,header{
     border: none;
 }
 .carousel-inner{
-    height: 450px;
+    height: 100%;
 }
 .carousel-inner img{
-    height: 450px;
+    height: 100%;
 }
+img{
+    width: 50%;
+    height: auto;
+}
+h3,p{
+    font-style: bold;
+}
+@media (max-width:900px){
+    a{
+        display: none;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        font-size: 100%;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    
+    }
+    @media (max-width:768px){
+        a{
+            display: none;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            font-size: 45%;
+            height: auto;
+            margin: auto;
+        }
+        
+        }
