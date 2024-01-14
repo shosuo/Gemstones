@@ -1,0 +1,6 @@
+images
+DS_Store
+.vs_code
+node_modules
+package-lock.json
+package.json

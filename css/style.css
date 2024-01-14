@@ -1,0 +1,49 @@
+body{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+a:hover{
+    color:rgb(247, 7, 195);
+    transition: all 0.5 ease;
+}
+.nav-link{
+    font-size: 18px;
+}
+.nav-link:hover{
+    color: rgb(247, 7, 195);
+}
+.navbar-toggler{
+    opacity: 1;
+}
+nav{
+    align-items: center;
+}
+main,header{
+    margin-top: 10%;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.btn-primary{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: rgb(247, 7, 195);
+    border: none;
+}
+.carousel-inner{
+    height: 450px;
+}
+.carousel-inner img{
+    height: 450px;
+}
