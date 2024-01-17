@@ -1,13 +1,14 @@
 
 body{
     color: black;
-    width: 1058px;
-    margin: auto;
+    text-align: center;
+    font-size: 80%;
+    height: auto;
 }
-a{
+a{  
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 50%;
 }
 a:hover{
     color:rgb(247, 7, 195);
@@ -19,21 +20,22 @@ a:hover{
 .nav-link:hover{
     color: rgb(247, 7, 195);
 }
-.navbar-toggler{
-    opacity: 1;
-}
+
+
 nav{
-    min-width: 100%;
     align-items: center;
-    margin: auto;
     
 }
 header,main{
     margin-top: 10%;
 }
+section{
+    display: none;
+ 
+}
 article{
-    position: absolute;
-    width: 1058px;
+    margin-top: 20%;
+    position: relative;
 }
 .row{
    display: grid;
@@ -56,4 +58,34 @@ article{
 
 h3,p{
     font-style: bold;
+}
+
+@media (max-width:1210px){
+    .row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+   align-items: center;
+}}
+@media (max-width:900px){
+    .row{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: center;
+   align-items: center;
+}
+
+
+}
+@media (max-width:610px){
+    .row{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   justify-content: center;
+   align-items: center;
+
+}
+a{
+    display: none;
+}
 }
