@@ -1,8 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    color: black;
-    width:  100%;
-    height: auto;
+    color: black;  
     margin: auto;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -24,19 +28,20 @@ a:hover{
 }
 nav{
     align-items: center;
-    width: 100%;
-    
+    width:100%;
+    position: fixed;
 }
-main,header{
-    margin-top: 10%;
-    height: auto;
+header{
+    margin-top:20px;
 }
-.row{
+article{
+    position: absolute;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,4fr);
+    margin: 20px;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+     
 }
 .btn-primary{
     color: white;
@@ -47,43 +52,79 @@ main,header{
     background-color: rgb(247, 7, 195);
     border: none;
 }
+p{
+    font-size: 100%;
+}
+@media (max-width:780px){
+body{
+    color: black;
+    width: 320px;
+    margin: auto;
+}
+a{
+    display: none;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+a:hover{
+    color:rgb(247, 7, 195);
+    transition: all 0.5 ease;
+}
+.nav-link{
+    font-size: 18px;
+}
+.nav-link:hover{
+    color: rgb(247, 7, 195);
+}
+.navbar-toggler{
+    opacity: 1;
+}
+nav{
+    width: 320px;
+    align-items: center;
+    margin: auto;
+    
+}
+header{
+    margin-top: 10%;
+    width: 320px;
+}
+main{
+    width: 320px;
+}
+
+
+article{
+    display: grid;
+    position: absolute;
+    width: 300px;
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   justify-content: center;
+    margin:20px ;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn-primary{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: rgb(247, 7, 195);
+    border: none;
+}
 .carousel-inner{
-    height: 100%;
+    width:320px;
 }
 .carousel-inner img{
-    height: 100%;
-}
-img{
-    width: 50%;
-    height: auto;
-}
+    width: 320px;}
+    
+
+
 h3,p{
     font-style: bold;
 }
-@media (max-width:900px){
-    a{
-        display: none;
-    }
-    .row{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        font-size: 100%;
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-    
-    }
-    @media (max-width:768px){
-        a{
-            display: none;
-        }
-        .row{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            font-size: 45%;
-            height: auto;
-            margin: auto;
-        }
-        
-        }
+}
